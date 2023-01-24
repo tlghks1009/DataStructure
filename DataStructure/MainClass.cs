@@ -4,7 +4,7 @@ using System.Xml;
 
 namespace DataStructure
 {
-    internal class Program
+    internal class MainClass
     {
         public static void Main(string[] args)
         {

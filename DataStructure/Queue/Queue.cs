@@ -1,15 +1,20 @@
-namespace List.Queue
+namespace DataStructure.Queue
 {
     public class Queue<T>
     {
-        private class QueueNode<T>
+        private class Node<T>
         {
             public T value;
-            public QueueNode<T> nextNode;
+            public Node<T> nextNode;
+
+            public Node(T value)
+            {
+                this.value = value;
+            }
         }
 
-        private QueueNode<T> _currentNode;
-        private QueueNode<T> _nextNode;
+        private Node<T> _currentNode;
+        private Node<T> _nextNode;
         
         private int _size;
 
@@ -19,7 +24,7 @@ namespace List.Queue
         
         public void Enqueue(T item)
         {
-            var newNode = CreateQueueNode(item);
+            var newNode = CreateNode(item);
             
             if (_currentNode == null)
             {
@@ -50,14 +55,6 @@ namespace List.Queue
             return result;
         }
 
-        private QueueNode<T> CreateQueueNode(T item)
-        {
-            var newQueueNode = new QueueNode<T>
-            {
-                value = item
-            };
-
-            return newQueueNode;
-        }
+        private Node<T> CreateNode(T item) => new Node<T>(item);
     }
 }

@@ -39,7 +39,10 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="BinarySearchTree\BinarySearchTree.cs" />
-        <Compile Include="Program.cs" />
+        <Compile Include="List\List.cs" />
+        <Compile Include="MainClass.cs" />
+        <Compile Include="Queue\Queue.cs" />
+        <Compile Include="Stack\Stack.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

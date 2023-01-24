@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace List
+namespace DataStructure.List
 {
     public class List<T>
     {

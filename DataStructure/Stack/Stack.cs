@@ -1,6 +1,6 @@
 using System;
 
-namespace List.Stack
+namespace DataStructure.Stack
 {
     public class Stack<T>
     {
